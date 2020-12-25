@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ComponentModule} from "./component/component.module"
 import { AppRoutingModule } from './app-routing.module';
 
-import {CityService} from "./service/city.service"
+import {CityService} from "./service/city/city.service"
 
 @NgModule({
   declarations: [

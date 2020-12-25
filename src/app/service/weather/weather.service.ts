@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-
-import { Observable, of } from 'rxjs';
 import { HttpHeaders, HttpClient, HttpParams } from "@angular/common/http";
 import { WeatherView } from "../../models/weather.model"
 
