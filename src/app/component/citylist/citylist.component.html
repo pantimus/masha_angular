@@ -1,0 +1,13 @@
+<p>citylist works!</p>
+<div *ngIf="cites">
+<ul class="cites">
+  <li *ngFor="let city of cites"
+    [class.selected]="city === selectedCity"
+    (click)="onSelect(city)">
+    <span class="badge">{{city.id}}</span> {{city.name}} {{city.temp}}℃
+  </li>
+</ul>
+</div>
+<div *ngIf="selectedCity">
+  <app-weather-list [city]="selectedCity"></app-weather-list>
+</div>
