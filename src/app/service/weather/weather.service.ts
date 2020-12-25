@@ -22,6 +22,8 @@ export class WeatherService {
     if (cityName!= undefined) {
         params = params.append("q", cityName);
         params = params.append("appid", this.apiKey);
+        params = params.append("units", this.units);
+        params = params.append("lang", 'ru');
     }
     let options = {
         headers: this.headers,

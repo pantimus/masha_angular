@@ -7,7 +7,7 @@ import { CitylistComponent } from './component/citylist/citylist.component';
 const routes: Routes = [
   { path: '', redirectTo: '/citylist', pathMatch: 'full' },
   { path: 'citylist', component: CitylistComponent },
-  { path: 'city/:id', component: WeatherListComponent },
+  { path: 'city/:name', component: WeatherListComponent },
 ];
 
 @NgModule({

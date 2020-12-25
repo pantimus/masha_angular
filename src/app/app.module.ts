@@ -17,7 +17,8 @@ import {CityService} from "./service/city.service"
     AppRoutingModule,
     FormsModule,
     ComponentModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [CityService, HttpClientModule],
   bootstrap: [AppComponent]

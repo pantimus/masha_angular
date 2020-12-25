@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.fluid {
+  position: relative;
+}
+
+body {
+  padding: 0;
+  background: #eee;
+  margin: 0 auto;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px yellow;
+}
+body::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
+#app {
+  font-family: Roboto, Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+}

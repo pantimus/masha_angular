@@ -1,12 +1,25 @@
-<p>weather-list works!</p>
+<div *ngIf="content" class="weather">
+  <h2>{{ content.name | uppercase }} Погода</h2>
+  <div class="row">
+    <div class="col-md-6">Температура {{ content?.main.temp }} ℃</div>
+    <div class="col-md-6">Ощущается как {{ content?.main.feels_like }} ℃</div>
 
-<div *ngIf="content">
+    <div class="col-md-6">
+      Минимальная температура {{ content?.main.temp_min }} ℃
+    </div>
+    <div class="col-md-6">
+      Максимальная температура {{ content?.main.temp_max }} ℃
+    </div>
 
-    <h2>{{content.name | uppercase}} Weather</h2>
-    <div>
-        temp
-      
-    
-    </div>
-    
-    </div>
+    <div class="col-md-6">Давление {{ content?.main.pressure }} мм рт.ст. </div>
+    <div class="col-md-6">Влажность {{ content?.main.humidity }} % </div>
+
+    <div class="col-md-6">Ветер {{ content?.wind.speed}} </div>
+    <div class="col-md-6">Направление {{ content?.wind.deg}} °</div>
+
+    <div class="col-md-6">Восход {{ sunrise }}</div>
+    <div class="col-md-6">Закат {{ sunset }}</div>
+
+    <div class="col-md-5">{{ content?.weather[0].description }}</div>
+  </div>
+</div>
